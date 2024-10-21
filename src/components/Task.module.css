@@ -1,0 +1,85 @@
+.tarefa {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tarefa p {
+  flex: 1;
+}
+
+.tarefa button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  color: var(--gray-300);
+  padding: 5px 4px 2px 4px;  
+  transition: 0.2s background-color;
+}
+
+.tarefa button:hover {
+  background-color: var(--gray-400);
+  color: var(--danger);
+}
+
+.textoTachado {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.checkboxContainer {
+  position: relative;
+  display: inline-block;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  outline: none;
+  transition: 0.2s all;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.checkbox-desmarcada {
+  border: 2px solid var(--blue);
+}
+
+.checkbox-desmarcada:hover {
+  background-color: var(--blue-dark);
+}
+
+.checkbox-marcada {
+  border: 2px solid var(--purple-dark);
+  background-color: var(--purple-dark);
+}
+
+.checkbox-marcada:hover {
+  border: 2px solid var(--purple);
+  background-color: var(--purple);
+}
+
+.checkIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--gray-100);
+  pointer-events: none;
+  width: 0.75rem;
+  height: 0.75rem;
+}
